@@ -1,0 +1,10 @@
+server:
+  port: 8090
+  servlet:
+    session:
+      timeout: 30m          # timeout de sesion
+      cookie:
+        http-only: true     # flag HttpOnly
+        secure: false        # true en produccion (HTTPS)
+        same-site: strict   # flag SameSite=Strict
+        name: CARRITO_SESSION  # nombre personalizado
